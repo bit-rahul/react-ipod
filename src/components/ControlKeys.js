@@ -34,19 +34,19 @@ export default class Controls extends React.Component {
   render() {
     return (
       <div id="controls" draggable="false">
-        <div id="menu-button" className="unselectable" onClick={() => this.handleClick("menu")}>
+        <div id="menu-button" className="unselectable" onClick={() => this.handleClick("menu")} onTouchEnd={() => this.handleClick("menu")}>
           MENU
         </div>
-        <div id="forward" onClick={() => this.handleClick("forward")}>
+        <div id="forward" onClick={() => this.handleClick("forward")}  onTouchEnd={() => this.handleClick("forward")}>
           <img src="https://assets.dryicons.com/uploads/icon/svg/9890/ecad2bdf-c4ff-49a8-ab36-792769198047.svg" alt="Fast Forward" />
         </div>
-        <div id="play" onClick={() => this.handleClick("play-pause")}>
+        <div id="play" onClick={() => this.handleClick("play-pause")} onTouchEnd={() => this.handleClick("play-pause")}>
           <img src="https://assets.dryicons.com/uploads/icon/svg/9889/e516d509-1a29-4239-9ab9-74677679800f.svg" alt="Play/Pause" />
         </div>
-        <div id="rewind" onClick={() => this.handleClick("rewind")}>
+        <div id="rewind" onClick={() => this.handleClick("rewind")}  onTouchEnd={() => this.handleClick("rewind")}>
           <img src="https://assets.dryicons.com/uploads/icon/svg/9890/ecad2bdf-c4ff-49a8-ab36-792769198047.svg" alt="Fast Rewind" />
         </div>
-        <div id="select" onClick={() => this.handleClick("select")}></div>
+        <div id="select" onClick={() => this.handleClick("select")} onTouchEnd={() => this.handleClick("select")}></div>
       </div>
     );
   }
